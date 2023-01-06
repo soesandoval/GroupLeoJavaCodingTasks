@@ -6,8 +6,8 @@ public class tasks {
 
 
     1. Numbers -- Prime Number
-        Write a method that can check if a number is
-       Prime or not
+     Write a method that can check if a number is
+     Prime or not
 
     2. Numbers -- Armstrong numbers
     Write a method that can check if a number is
