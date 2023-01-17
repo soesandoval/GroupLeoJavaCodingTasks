@@ -2,24 +2,21 @@ package week3;
 
 public class ReverseNegativeNumber {
     public static void main(String[] args) {
-
-        reverseNegative(-12346);
+        int num = -123;
+        int reversedNum = reverseValue(num);
+        System.out.println(reversedNum);
     }
-
-    public static int reverseNegative(int num){
-
-        int reverse = 0;
-        if(num>=0)
-            throw new RuntimeException("Please provide negative number");
-
-
-        while(num!=0){
-
-            int remainder = num % 10;
-            reverse = reverse * 10 + remainder;
-            num = num/10;
+    public static int reverseValue(int num) {
+        String numString = Integer.toString(num);
+        StringBuilder reversedNumStringBuilder = new StringBuilder();
+        boolean isNegative = numString.charAt(0) == '-';
+        if(isNegative) {
+            reversedNumStringBuilder.append('-');
         }
-        System.out.println(reverse);
-        return reverse;
+        for (int i = numString.length()-1; i >= 0; i--) {
+            if(numString.charAt(i) != '-')
+                reversedNumStringBuilder.append(numString.charAt(i));
+        }
+        return Integer.parseInt(reversedNumStringBuilder.toString());
     }
 }
