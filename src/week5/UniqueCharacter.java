@@ -6,7 +6,7 @@ import java.util.Set;
 public class UniqueCharacter {
     public static void main(String[] args) {
 
-        String a = "SofiaSandoval";
+        String a = "SoFiaSandoval";
 
         UniqueChar(a);
 
@@ -23,7 +23,7 @@ public class UniqueCharacter {
         for (int i = 0; i < a.length(); i++) {
             char chh = a.charAt(i); // index of a char
             if(count[chh] == 1){ // only char that is repeated once will be printed out
-                System.out.println("index = " + i + " is a unique character.");
+                System.out.println(chh + " is a unique character.");
             }
         }
 
