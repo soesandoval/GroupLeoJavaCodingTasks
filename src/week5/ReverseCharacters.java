@@ -12,14 +12,13 @@ public class ReverseCharacters {
         char ch[] = a.toCharArray();
 
         String reversed = " ";
-        for (int i = ch.length -1; i >= 0; i--) {
+        for (int i = ch.length -1; i >= 0; i--) {// from the last character to the first character
             reversed+= ch[i];
 
         }
 
 
         System.out.println("Reversed string" + reversed);
-
     }
 
 }
