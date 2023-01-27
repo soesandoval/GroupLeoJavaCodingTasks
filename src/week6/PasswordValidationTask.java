@@ -1,6 +1,64 @@
 package week6;
 
+import java.rmi.ServerError;
+
 public class PasswordValidationTask {
+
+    public static boolean passValidation(String password){
+
+        boolean isValid = false;
+        if(password.contains(" ") || password.length()<6){
+            System.err.println("Needs to be at least 6 chars and not contain SPACE!");
+            System.exit(1);
+        }
+
+        int freqUpper = 0;
+        int freqLower = 0;
+        int freqDigit = 0;
+        int freqSpecChar = 0;
+
+        for (int i = 0; i < password.length(); i++) {
+            char ch = password.charAt(i);
+            if(Character.isUpperCase(ch)){
+                freqUpper++;
+            } else if (Character.isLowerCase(ch)) {
+                freqLower++;
+            } else if(Character.isDigit(ch)){
+                freqDigit++;
+            }else if(!(Character.isLetterOrDigit(ch))){
+                freqSpecChar ++;
+            }
+
+        }
+
+        if(freqLower<1){
+            System.err.println("Password should contain at least one lower case!");
+            System.exit(1);
+        }else if(freqUpper<1){
+            System.err.println("Password should contain at least one Upper case!");
+            System.exit(1);
+        } else if (freqDigit<1) {
+            System.err.println("Password should contain at least one digit!");
+            System.exit(1);
+        } else if (freqSpecChar<1) {
+            System.err.println("Password should contain at least one special character!");
+        } else {
+            isValid = true;
+
+        }
+
+        System.out.println("Password is Valid");
+        return isValid;
+    }
+
+    public static void main(String[] args) {
+
+        passValidation("asdfgh123");
+
+
+    }
+
+
 
 }
 /*
