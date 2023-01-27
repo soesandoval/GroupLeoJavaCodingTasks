@@ -2,7 +2,13 @@ package Anton.week3;
 
 public class tasks {
 
-    /*
+
+
+
+
+
+
+   /*
 
 
     1. Numbers -- Prime Number
