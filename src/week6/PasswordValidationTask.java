@@ -1,6 +1,9 @@
 package week6;
 
 public class PasswordValidationTask {
+    public static void main(String[] args) {
+
+    }
 
 }
 /*
