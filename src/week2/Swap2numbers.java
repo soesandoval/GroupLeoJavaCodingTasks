@@ -2,21 +2,14 @@ package week2;
 
 public class Swap2numbers {
 
-    public static void main(String[] args) {
+    public static void swap1(int a, int b) {
+        a = a + b;
+        b = a - b;
+        a = a - b;
 
-        int x = 10;
-        int y = 20;
-        x = x + y;
-        y = x - y;
-        x = x - y;
-        System.out.println("value of x:" + x);
-        System.out.println("value of y:" + y);
-
-
-
+        System.out.println("a = " + a);
+        System.out.println("b = " + b);
     }
-
-
 
 }
 /*
