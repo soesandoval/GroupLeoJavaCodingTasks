@@ -3,6 +3,9 @@ package week6;
 import java.rmi.ServerError;
 
 public class PasswordValidationTask {
+    public static void main(String[] args) {
+
+    }
 
     public static boolean passValidation(String password){
 
