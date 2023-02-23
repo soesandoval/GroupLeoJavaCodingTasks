@@ -1,10 +1,8 @@
-package week8;
+package week9;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
-public class ArrayList_RemoveValuesMoreThan100 {
-
+public class ArrayList_RemoveValuesMoreThan_100 {
     public static void main(String[] args) {
         ArrayList<Integer> list1 = new ArrayList<>();
         list1.add(23);
@@ -22,5 +20,4 @@ public class ArrayList_RemoveValuesMoreThan100 {
         System.out.println(list1);
         return list1;
     }
-
 }
